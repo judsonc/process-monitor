@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <title>Monitor App</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#212529" />
+    <meta name="description" content="The Monitor App." />
+    <link rel="apple-touch-icon" href="./assets/logo192.png" />
+    <link rel="manifest" href="./assets/manifest.json" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <link href="./assets/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="container nes-container is-centered is-white">
+      <p id="title">MONITOR</p>
+    </section>
+
+    <section id="content" class="container flex main-content">
+      <div id="graph" class="full-size"></div>
+    </section>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"
+      integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ=="
+      crossorigin="anonymous">
+    </script>
+    <script src="./assets/graph-script.js"></script>
+  </body>
+</html>

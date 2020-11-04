@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 99vh;
+  background-color: #212529;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.nes-container-padding {
+  padding: 1.5rem 1rem;
+}
+
+.nes-table.is-dark::before {
+  content: inherit;
+}
+
+@media only screen and (min-width: 701px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
+.full-size {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+button.nes-btn {
+  font-size: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.grow1 {
+  flex: 1;
+}
+
+.is-white {
+  background-color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.is-centered {
+  text-align: center;
+}
+
+.table-content {
+  white-space: nowrap;
+  margin-left: 0px !important;
+}
