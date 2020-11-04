@@ -20,8 +20,13 @@
     <link href="./assets/style.css" rel="stylesheet" />
   </head>
   <body>
-    <section class="container nes-container is-centered is-white">
-      <input type="text" id="search-text" class="nes-input">
+    <section class="container nes-container text-right is-white">
+      <a href="./">
+        <div id="graph">
+          <i class="nes-icon close is-medium"></i>
+        </div>
+      </a>
+      <input type="text" id="search-text" class="nes-input" placeholder="Filtrar">
     </section>
 
     <section id="content" class="container flex main-content">
@@ -31,7 +36,7 @@
             <tr>
               <th>PID</th>
               <th>User</th>
-              <th>Name</th>
+              <th>Process</th>
               <th>%CPU</th>
               <th>%Mem</th>
               <th>Priority</th>
@@ -40,7 +45,7 @@
           </thead>
           <tbody id="table-body">
             <tr>
-              <td colspan="8" class="is-centered">
+              <td colspan="7" class="is-centered">
                 Loading...
               </td>
             </tr>

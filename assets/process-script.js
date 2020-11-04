@@ -1,7 +1,7 @@
 const socket = io('http://localhost:8000/process');
 let process, search;
 
-socket.on('list-process', data => {
+socket.on('list-process', (data) => {
   process = '';
 
   for (let i = 0; i < data.length; i++) {

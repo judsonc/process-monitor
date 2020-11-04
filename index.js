@@ -13,11 +13,11 @@ app.get('/', (_, res) => res.sendFile(join(__dirname + '/pages/graph.html')));
 
 function listProcess(socket) {
   si.processes().then(data => 
-    socket.emit('list-process', data.list.filter(val => val.pcpu)))
+    socket.emit('list-process', data.list))
 }
 
 io.of('/process').on('connection', socket => {  
-  const repeat = setInterval(() => listProcess(socket), 2000)  
+  const repeat = setInterval(() => listProcess(socket), 1000)  
   socket.on('disconnect', () => clearInterval(repeat));
 });
 
